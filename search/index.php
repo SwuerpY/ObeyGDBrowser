@@ -68,86 +68,79 @@
 		</div>
 	</div> -->
 
-	<div style="position:absolute; bottom: 0%; left: 0%; width: 100%">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%;>
-	</div>
+	<div class="cornerPiece"></div>
 
-	<div style="position:absolute; bottom: 0%; right: 0%; width: 100%; text-align: right;">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%; style="transform: scaleX(-1);  pointer-events: none">
-	</div>
+	<div class="cornerPiece bottomRight"></div>
 
-	<div class="transparentBox center" style="width: 115vh; height: 9%; margin: 1.5% auto 1% auto; padding-bottom: 0.2%">
-		<div>
+	<div class="search-bar transparentBox center">
 		<input type="text" id="levelName" placeholder="Enter a level, user, or ID" maxlength=20>
-		<img search="0" src="../assets/search.png" id="searchBtn" width="20%" class="valign gdButton levelSearch" style="margin-left: 1%; margin-bottom: 2.2%">
-		<img id="userSearch" src="../assets/search-user.png" width="9.6%" class="valign gdButton" style="margin-left: 1%; margin-bottom: 2.2%">
-		</div>
+		<img search="0" src="../assets/GJ_longBtn06_001.png" id="searchBtn" width="11%" class="gdButton levelSearch">
+		<img id="userSearch" src="../assets/GJ_longBtn05_001.png" width="11%" class="gdButton">
+		<img id="userSearch" src="../assets/GJ_longBtn05_001.png" width="11%" class="gdButton">
 	</div>
 
 	<div class="center">
 		<h1 class="smaller">Quick Search</h1>
 	</div>
 
-	<div class="transparentBox center" style="width: 115vh; height: 35%; margin: 0.5% auto 1% auto; padding-top: 1.1%">
-		<img src="../assets/btn-top.png" height="27%" class="valign gdButton spaced levelSearch" search="mostdownloaded">
+	<div class="categories-box transparentBox center">
+		<img src="../assets/btn-top.png" class="valign gdButton levelSearch" search="mostdownloaded">
 		<span style="margin-right: 3%"></span>
-		<img src="../assets/btn-liked.png" height="27%" class="valign gdButton spaced levelSearch" search="mostliked">
+		<img src="../assets/btn-liked.png" class="valign gdButton levelSearch" search="mostliked">
 		<br>
-		<img src="../assets/btn-trending.png" height="27%" class="valign gdButton spaced levelSearch" search="trending">
-		<img src="../assets/btn-recent.png" height="27%" class="valign gdButton spaced levelSearch" search="recent" style="margin-left: 2%; margin-right: 2%">
-		<img src="../assets/btn-magic.png" height="27%" class="valign gdButton spaced levelSearch" search="magic">
+		<img src="../assets/btn-trending.png" class="valign gdButton levelSearch" search="trending">
+		<img src="../assets/btn-recent.png" class="valign gdButton levelSearch" search="recent" style="margin-left: 2%; margin-right: 2%">
+		<img src="../assets/btn-magic.png" class="valign gdButton levelSearch" search="magic">
 		<br>
-		<img src="../assets/btn-awarded.png" height="27%" class="valign gdButton levelSearch" search="awarded">
-		<!-- <img src="../assets/btn-featured.png" height="27%" class="valign gdButton levelSearch" search="featured" style="margin: 0% 2%"> -->
-		<!-- <img src="../assets/btn-followed.png" height="27%" id="followedSearch" class="valign gdButton levelSearch" search="followed"> -->
+		<img src="../assets/btn-awarded.png" class="valign gdButton levelSearch" search="awarded">
+		<!-- <img src="../assets/btn-featured.png" class="valign gdButton levelSearch" search="featured" style="margin: 0% 2%"> -->
+		<!-- <img src="../assets/btn-followed.png" id="followedSearch" class="valign gdButton levelSearch" search="followed"> -->
 	</div>
 
 	<div class="center">
 		<h1 class="smaller">Filters</h1>
 	</div>
 
-	<div id="difficulties" class="transparentBox center" style="width: 115vh; height: 12%; margin: 0.5% auto 1% auto; padding-top: 1%; padding-bottom: 1%;">
-		<div class="diffDiv gdButton" diff="-1"><img src="../assets/difficulties/unrated.png"><h3 class="mini">N/A</h3></div>
-		<div class="diffDiv gdButton" diff=1><img src="../assets/difficulties/easy.png"><h3 class="mini">Easy</h3></div>
-		<div class="diffDiv gdButton" diff=2><img src="../assets/difficulties/normal.png"><h3 class="mini">Normal</h3></div>
-		<div class="diffDiv gdButton" diff=3><img src="../assets/difficulties/hard.png"><h3 class="mini">Hard</h3></div>
-		<div class="diffDiv gdButton" diff=4><img src="../assets/difficulties/harder.png"><h3 class="mini">Harder</h3></div>
-		<div class="diffDiv gdButton" diff=5><img src="../assets/difficulties/insane.png"><h3 class="mini">Insane</h3></div>
+	<div id="difficulties" class="transparentBox center">
+		<div class="diffDiv gdButton" diff="-1"><img src="../assets/difficulties/unrated.png"><h3 class="diff-text">N/A</h3></div>
+		<div class="diffDiv gdButton" diff=1><img src="../assets/difficulties/easy.png"><h3 class="diff-text">Easy</h3></div>
+		<div class="diffDiv gdButton" diff=2><img src="../assets/difficulties/normal.png"><h3 class="diff-text">Normal</h3></div>
+		<div class="diffDiv gdButton" diff=3><img src="../assets/difficulties/hard.png"><h3 class="diff-text">Hard</h3></div>
+		<div class="diffDiv gdButton" diff=4><img src="../assets/difficulties/harder.png"><h3 class="diff-text">Harder</h3></div>
+		<div class="diffDiv gdButton" diff=5><img src="../assets/difficulties/insane.png"><h3 class="diff-text">Insane</h3></div>
 
-		<div class="diffDiv gdButton" id="demonBtn" diff=-2><img src="../assets/difficulties/demon.png" style="width: 85%"><h3 class="mini">Demon</h3></div>
+		<div class="diffDiv gdButton" id="demonBtn" diff=-2><img src="../assets/difficulties/demon.png" style="width: 78%"><h3 class="diff-text">Demon</h3></div>
 
-		<!-- <div class="diffDiv gdButton" style="filter: brightness(100%)" id="demonBtn" diff=-2><img class="darkDiff" src="../assets/difficulties/demon.png" style="width: 85%"><h3 class="darkDiff mini">Demon</h3> -->
+		<!-- <div class="diffDiv gdButton" style="filter: brightness(100%)" id="demonBtn" diff=-2><img class="darkDiff" src="../assets/difficulties/demon.png" style="width: 85%"><h3 class="darkDiff diff-text">Demon</h3> -->
 		<!-- <img src="../assets/exclamation.png" style="position: absolute; width: 19%; left: 86%; bottom: 68%"></div> -->
 
-		<div class="diffDiv gdButton" diff=-3><img src="../assets/difficulties/auto.png"><h3 class="mini">Auto</h3></div>
+		<div class="diffDiv gdButton" diff=-3><img src="../assets/difficulties/auto.png"><h3 class="diff-text">Auto</h3></div>
 	</div>
 
-	<div id="demons" class="transparentBox" style="display: none; width: 115vh; height: 12%; margin: 0.5% auto 1% auto; padding-top: 0.6%; padding-bottom: 1.4%;">
-		<div class="diffDiv gdButton demonDiff" diff=1 style="margin-left: 3.5%"><img src="../assets/difficulties/demon-easy.png" style="width: 90%"><h3 class="mini center">Easy</h3></div>
-		<div class="diffDiv gdButton demonDiff" diff=2><img src="../assets/difficulties/demon-medium.png" style="width: 90%"><h3 class="mini center smallTextWoo">Medium</h3></div>
-		<div class="diffDiv gdButton demonDiff" diff=3><img src="../assets/difficulties/demon-hard.png" style="width: 90%"><h3 class="mini center">Hard</h3></div>
-		<div class="diffDiv gdButton demonDiff" diff=4><img src="../assets/difficulties/demon-insane.png" style="width: 95%"><h3 class="mini center smallTextWoo">Insane</h3></div>
-		<div class="diffDiv gdButton demonDiff" diff=5><img src="../assets/difficulties/demon-extreme.png" style="width: 100%"><h3 class="mini center smallTextWoo">Extreme</h3></div>
-		<div class="diffDiv gdButton goBack" diff=-2 style="margin-left: 2.3%; filter: none"><img src="../assets/difficulties/demon.png" style="width: 90%"><h3 class="mini">Demon</h3></div>
+	<div id="demons" class="transparentBox" style="display: none;">
+		<div class="diffDiv gdButton demonDiff" diff=1 style="margin-left: 3.5%"><img src="../assets/difficulties/demon-easy.png"><h3 class="diff-text center">Easy</h3></div>
+		<div class="diffDiv gdButton demonDiff" diff=2><img src="../assets/difficulties/demon-medium.png"><h3 class="diff-text center smallTextWoo">Medium</h3></div>
+		<div class="diffDiv gdButton demonDiff" diff=3><img src="../assets/difficulties/demon-hard.png"><h3 class="diff-text center">Hard</h3></div>
+		<div class="diffDiv gdButton demonDiff" diff=4><img src="../assets/difficulties/demon-insane.png"><h3 class="diff-text center smallTextWoo">Insane</h3></div>
+		<div class="diffDiv gdButton demonDiff" diff=5><img src="../assets/difficulties/demon-extreme.png"><h3 class="diff-text center smallTextWoo">Extreme</h3></div>
+		<div class="diffDiv gdButton goBack" diff=-2 style="margin-left: 2.3%; filter: none"><img src="../assets/difficulties/demon.png"><h3 class="diff-text">Demon</h3></div>
 		<a id="demonList" style="display: none" href="./search/*?type=demonlist"><div class="gdButton diffDiv" style="filter: none"><img src="../assets/trophy2.png" style="width: 95%"><h3 class="yellow mini center">List</h3></div></a>
 	</div>
 
-	<div class="transparentBox center" style="width: 135vh; height: 6%; margin: 0.5% auto 1% auto; padding-top: 1%; padding-bottom: 0.5%;">
-		<!-- <div class="lengthDiv" style="pointer-events: none" len=0><h1 class="gdButton smaller" style="pointer-events: none"><img src="../assets/time.png" height="90%" style="pointer-events: none"></h1></div> -->
+	<div class="length-box transparentBox center">
+		<img src="../assets/time.png" style="pointer-events: none">
 		<div class="lengthDiv" len=0><h1 class="gdButton smaller">Tiny</h1></div>
 		<div class="lengthDiv" len=1><h1 class="gdButton smaller">Short</h1></div>
 		<div class="lengthDiv" len=2><h1 class="gdButton smaller">Medium</h1></div>
 		<div class="lengthDiv" len=3><h1 class="gdButton smaller">Long</h1></div>
 		<div class="lengthDiv" len=4><h1 class="gdButton smaller">XL</h1></div>
 	<?php 
-		if($gdpsVersion > 21) { ?> <div class="lengthDiv" len=5><h1 class="gdButton smaller">Platform</h1></div> <?php }
+		if($gdpsVersion > 21) { ?> <div class="lengthDiv" len=5><h1 class="gdButton smaller">Plat.</h1></div> <?php }
 	?>
-		<div class="lengthDiv" id="starCheck"><img src="../assets/star.png" class="gdButton" height="90%"></div>
+		<div class="lengthDiv" id="starCheck"><img src="../assets/star.png" class="gdButton"></div>
 	</div>
 
-	<div style="position:absolute; top: 2%; left: 1.5%; width: 10%; height: 25%; pointer-events: none">
-		<img class="gdButton yesClick" id="backButton" src="../assets/back.png" height="30%" onclick="backButton()">
-	</div>
+	<div class="gdButton  yesClick" id="backButton" onclick="backButton()"></div>
 
 	<div style="position:absolute; top: 2%; right: 1.5%; width: 10%; text-align: right">
 		<img class="gdButton" style="margin-bottom: 12%" src="../assets/close.png" width="60%" onclick="clearFilters()">

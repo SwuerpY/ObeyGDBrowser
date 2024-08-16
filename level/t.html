@@ -78,13 +78,9 @@
 		</div>
 	</div> -->
 
-	<div style="position:absolute; bottom: 0%; left: 0%; width: 100%">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%;>
-	</div>
+	<div class="cornerPiece"></div>
 
-	<div style="position:absolute; bottom: 0%; right: 0%; width: 100%; text-align: right;">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%; style="transform: scaleX(-1)">
-	</div>
+	<div class="cornerPiece bottomRight"></div>
 
 	<div class="center" style="width: 70%; margin: 1% auto">
 		<h1 class="pre" style="transform: scale(1.2)">[[NAME]]</h1>
@@ -130,7 +126,7 @@
 		<p class="pre" style="padding: 0 5%; white-space:normal">[[DESCRIPTION]]</p>
 	</div>
 
-	<div class="brownBox" id="songBox" style="position:absolute; bottom: 4%; left: 0; right: 0; width: 85vh; height: 20%; margin-left: auto; margin-right: auto;">
+	<div class="brownBox" id="songBox">
 		<div style="margin-left: 0.5%">
 			<h1 class="pre slightlySmaller" id="songname">[[SONGNAME]]</h1>
 			<h2 class="pre smaller">By: [[SONGAUTHOR]]<!--
@@ -151,7 +147,7 @@
 	</div>
 
 	<div class="center noClick" style="position:absolute; top: 24%; right: 0%; min-width: 100%">
-		<img class="gdButton yesClick" id="playButton" src="../assets/play.png" width="11%">
+		<img class="gdButton" id="playButton" src="../assets/play.png" width="11%">
 	</div>
 
 	<div class="levelButtons" style="position:absolute; top: 46%; right: 3.5%; transform: translateY(-50%); height: 75%;">
@@ -163,9 +159,7 @@
 		<!-- <a href="./leaderboard/[[ID]]"><img id="leaderboardbtn" title="View Leaderboard" class="gdButton sideButton" src="../assets/leaderboard.png"></a><br> -->
 	</div>
 
-	<div style="position:absolute; top: 2%; left: 1.5%; width: 10%; height: 25%; pointer-events: none">
-		<img class="gdButton yesClick" id="backButton" src="../assets/back.png" height="30%" onclick="backButton()">
-	</div>
+	<div class="gdButton  yesClick" id="backButton" onclick="backButton()"></div>
 	<div id="copied" style="display: none;">
 		<div class="copied center noClick" style="position:absolute; top: 36%; left: 50%; transform: translate(-50%,-50%); width: 90vh">
 			<h1 class="smaller noSelect" id="copiedText">ID copied to clipboard</h1>

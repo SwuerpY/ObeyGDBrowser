@@ -35,13 +35,9 @@
 	<div class="popup" id="credits">
 	</div>
 
-	<div style="position:absolute; bottom: 0%; left: 0%; width: 100%; pointer-events: none">
-		<img class="cornerPiece" src="assets/corner.png" width=7%;>
-	</div>
+	<div class="cornerPiece"></div>
 
-	<div style="position:absolute; top: 0%; left: 0%; width: 100%; pointer-events: none">
-		<img class="cornerPiece" src="assets/corner.png" width=7%; style="transform: scaleY(-1)">
-	</div>
+	<div class="cornerPiece topLeft"></div>
 
 	<div style="position:absolute; top: 1.7%; right: 2%; text-align: right; width: 10%;">
 		<img id="creditsButton" class="gdButtonBrowser" src="assets/credits.png" width="60%" onclick="showCredits()">

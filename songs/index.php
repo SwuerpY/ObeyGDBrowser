@@ -168,13 +168,9 @@
 		</div>
 	</div>
 
-	<div style="position:absolute; bottom: 0%; left: 0%; width: 100%">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%;>
-	</div>
+	<div class="cornerPiece bottomLeft"></div>
 
-	<div style="position:absolute; bottom: 0%; right: 0%; width: 100%; text-align: right;">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%; style="transform: scaleX(-1)">
-	</div>
+	<div class="cornerPiece bottomRight"></div>
 
 	<div id="searchBox" class="supercenter dragscroll">
 		<div style="height: 4.5%"></div>
@@ -202,9 +198,7 @@
 		<img src="../assets/settingsbutton.png" height="60%" class="gdButton" style="margin-top: 5%" onclick="$('#settingsDiv').show();">
 	</div>
 
-	<div style="position:absolute; top: 2%; left: 1.5%; width: 10%; height: 25%; pointer-events: none">
-		<img class="gdButton yesClick" id="backButton" src="../assets/back.png" height="30%" onclick="backButton()">
-	</div>
+	<div class="gdButton  yesClick" id="backButton" onclick="backButton()"></div>
 
 	<div id="purge" style="position:absolute; bottom: 1%; right: -3%; width: 10%; display:none;">
 		<img class="gdButton" src="../assets/delete.png" width="60%" onclick="$('#purgeDiv').show()">

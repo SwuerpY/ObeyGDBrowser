@@ -182,7 +182,7 @@
 		<h1 id="header" style="position: absolute; left: 50%; transform: translate(-50%, 1280%);"></h1>
 	</div>
 
-	<div style="text-align: right; position:absolute; top: 1%; right: 2%">
+	<div style="text-align: right; position:absolute; top: 1.2%; right: 1.5%">
 		<h2 class="smaller" style="font-size: 4.5vh" id="pagenum"></h2>
 	</div>
 

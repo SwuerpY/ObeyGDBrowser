@@ -534,9 +534,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .epicbox {
     border: 3.5vh solid transparent;
-    border-image: url('../../assets/epicbox.png') 20% stretch;
-    border-image-slice: 85 77;
-    border-image-width: 9.5vh;
+    border-image: url('../../assets/table-list.png') 20% stretch;
+    border-image-slice: 178 178;
+    border-image-width: 14vh;
 }
 
 .leaderboardBox {
@@ -1577,8 +1577,18 @@ cp { color: #ff00ff }
   }
 } */
 
+#pagenum {
+    font-size: 4.6vh;
+}
+
 .main-menu-list {
     margin: 1vh 0;
+}
+
+#header  {
+    font-size: 8.1vh;
+    -webkit-text-stroke-width: 0.35vh;
+    text-shadow: 0.5vh 0.5vh 0.2vh rgba(0, 0, 0, 0.3);
 }
 
 .title-menu-list {
@@ -1622,6 +1632,17 @@ cp { color: #ff00ff }
 
 .details-menu-list span {
     margin-right: 3.6%;
+}
+
+.playContainer {
+    position: absolute;
+    top: 22.5%;
+    right: 0%;
+    min-width: 100%;
+}
+
+#playButton {
+    width: 13.5%;
 }
 
 #songBox {

@@ -61,13 +61,13 @@
 		<div style="height: 4.5%"></div>
 	</div>
 	
-	<div class="epicbox supercenter gs" style="width: 117vh; height: 80%; pointer-events: none;"></div>
+	<div class="epicbox supercenter gs" style="width: 116.3vh; height: 79.4%; pointer-events: none;"></div>
 
 	<div class="center" style="position:absolute; top: 8%; left: 0%; right: 0%">
 		<h1 id="header"></h1>
 	</div>
 
-	<div style="text-align: right; position:absolute; top: 1%; right: 2%">
+	<div style="text-align: right; position:absolute; top: 1.2%; right: 1.5%">
 		<h2 class="smaller" style="font-size: 4.5vh" id="pagenum"></h2>
 	</div>
 
@@ -201,7 +201,7 @@ function Append(firstLoad, noCache) {
 
 	loading = true;
 	if (!firstLoad) $('#pagenum').text(`Page ${(page + 1)}${pages ? ` of ${pages}` : ""}`)
-	$('#searchBox').html('<div style="height: 4.5%"></div>')
+	$('#searchBox').html('<div style="height: 6.5%"></div>')
 	$('#pageSelect').val(page + 1)
 	$('#loading').show()
 
@@ -306,7 +306,7 @@ function Append(firstLoad, noCache) {
 		</div>`)
 	})
 
-	$('#searchBox').append('<div style="height: 4.5%"></div>').scrollTop(0)
+	$('#searchBox').append('<div style="height: 6.5%"></div>').scrollTop(0)
 	$('#loading').hide()
 	loading = false;
 	}

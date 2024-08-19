@@ -72,17 +72,17 @@
 		</div>
 	</div>
 
-	<div style="position:absolute; bottom: 0%; left: 0%; width: 100%">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%;>
-	</div>
+	<div class="cornerPiece"></div>
 
-	<div style="position:absolute; bottom: 0%; right: 0%; width: 100%; text-align: right;">
-		<img class="cornerPiece" src="../assets/corner.png" width=7%; style="transform: scaleX(-1)">
-	</div>
+	<div class="cornerPiece bottomRight"></div>
+
+	<div class="cornerPiece topLeft"></div>
+
+	<div class="cornerPiece topRight"></div>
 
 	<div class="gdButton  yesClick" id="backButton" onclick="backButton()"></div>
 
-	<div class="brownBox center supercenter" style="width: 135vh; height: 82%; margin-top: -0.7%">
+	<div class="profile-box brownBox center supercenter">
 
 		<div id="globalrank0" style="position: absolute; left: 0.3%; top: 1.5%; width: 18%; text-align: left">
 			<p style="margin: 0;"><img src="../assets/trophy.png" class="inline valign help profileTrophy" width="22%" title="Global Rank"> [[RANK]]</p>
@@ -92,7 +92,7 @@
 			<img class="inline valign" id="modBadge1" style="display: none; height: 7%; cursor:help" src="../assets/mod.png" title="[[USERNAME]] is a moderator!"><!--
 			--><img class="inline valign" id="modBadge2" style="display: none; height: 7%; cursor:help" src="../assets/mod-elder.png" title="[[USERNAME]] is an elder moderator!"><!--
 			--><img class="inline valign" id="modBadge3" style="display: none; height: 7%; cursor:help" src="../assets/mod-extra.png" title="[[USERNAME]] is a custom moderator! (tier [[MODERATOR]])"><!--	
-			--><span style="margin-left: 1%">[[USERNAME]]</span>
+			--><span class="title-profile-box" style="margin-left: 1%">[[USERNAME]]</span>
 		</h1>
 		
 		<hr style="margin-bottom: 2%" class="profilePostHide">
@@ -103,10 +103,13 @@
 			<span id="coins">[[COINS]]</span> <img class="help valign" src="../assets/coin.png" title="Secret Coins">
 			<span id="usercoins">[[USERCOINS]]</span> <img class="help valign"src="../assets/silvercoin.png" title="User Coins">
 			<span id="demons">[[DEMONS]]</span> <img class="help valign"src="../assets/demon.png" title="Demons">
-			<span id="creatorpoints" style="display: none"><span id="cp">[[CP]]</span> <img class="help valign" src="../assets/cp.png" title="Creator Points"></span>
+			<span id="creatorpoints" style="display: none">
+				<span id="cp">[[CP]]</span>
+				<img class="help valign" src="../assets/cp.png" title="Creator Points">
+			</span>
 		</h3>
 
-		<div class="lightBox center profilePostHide" id="iconsDiv" style="margin: 2% auto; width: 105vh">
+		<div class="icon-kit-box lightBox center profilePostHide" id="iconsDiv">
 			<gdicon iconID=[[CUBE]] iconForm="cube" col1="[[COL1]]" col2="[[COL2]]" colg="[[COLG]]" glow="[[GLOW]]" id="mainIcon"></gdicon>
 			<gdicon iconID=[[SHIP]] iconForm="ship" col1="[[COL1]]" col2="[[COL2]]" colg="[[COLG]]" glow="[[GLOW]]" imgStyle="height: 7%"></gdicon>
 			<gdicon iconID=[[BALL]] iconForm="ball" col1="[[COL1]]" col2="[[COL2]]" colg="[[COLG]]" glow="[[GLOW]]"></gdicon>
@@ -119,7 +122,7 @@
 			<img src="../assets/deatheffects/[[DEATHEFFECT]].png" title="Death Effect [[DEATHEFFECT]]" id="deatheffect">
 		</div>
 
-		<div class="lightBox center dragscroll" id="statusDiv" normalHeight="36vh" compactHeight="69vh" style="margin: 2% auto; width: 105vh; height: 36vh; background-color: #BE6F3F">
+		<div class="lightBox center dragscroll" id="statusDiv" normalHeight="36vh" compactHeight="69vh" style="margin: 2% auto; width: 106vh; height: 36vh; background-color: #BE6F3F">
 		</div>
 
 		<div class="center profilePostHide" style="margin: 1.5% auto 2.5% auto;">
@@ -131,15 +134,15 @@
 			<p style="text-align: left; font-size: 2.2vh; color: rgba(0, 0, 0, 0.5)">Account ID: [[ACCOUNTID]]<br>Player ID: [[PLAYERID]]<br>Last Played: [[LASTPLAYED]]</p>
 		</div>
 
-		<img src="../assets/follow-off.png" id="followOff" class="gdButton profilePostHide" style="position: absolute; left: 4.5%; bottom: 1%; width: 6%">
-		<img src="../assets/follow-on.png"  id="followOn"  class="gdButton profilePostHide" style="position: absolute; left: 4.5%; bottom: 1%; width: 6%; display: none">
+		<img src="../assets/follow-off.png" id="followOff" class="gdButton profilePostHide" style="position: absolute; left: -0.2%; bottom: -0.4%; width: 7%">
+		<img src="../assets/follow-on.png"  id="followOn"  class="gdButton profilePostHide" style="position: absolute; left: -0.2%; bottom: -0.4%; width: 7%; display: none">
 	
 		<a id="commentA"><img src="../assets/comments.png" class="gdButton" id="commentButton" style="position: absolute; right: 0.5%; bottom: 50%; width: 6%" onclick="$('#featuredBlockedDiv').show()"></a>
 		<img src="../assets/expanded-off.png" class="gdButton" id="compactMode" style="position: absolute; left: 2%; bottom: 45%; width: 6%">
 
-		<a href="../search/search.html?s=0&user=[[PLAYERID]]"><img src="../assets/levels.png" class="gdButton" style="position: absolute; right: 0.5%; bottom: 1%; width: 6%"></a>
+		<a href="../search/search.html?s=0&user=[[PLAYERID]]"><img src="../assets/levels.png" class="gdButton" style="position: absolute; right: -0.3%; bottom: -0.5%; width: 7.5%"></a>
 
-		<div style="position: absolute; right: 0.5%; top: 0%; width: 6%">
+		<div class="social-media">
 			<a id="youtube" style="display: none" target="_blank" href="https://youtube.com/channel/[[YOUTUBE]]"><img src="../assets/youtube.png" class="gdButton socialButton"></a>
 			<a id="twitter" style="display: none" target="_blank" href="https://twitter.com/[[TWITTER]]"><img src="../assets/twitter.png" class="gdButton socialButton"></a>
 			<a id="twitch"  style="display: none" target="_blank" href="https://twitch.tv/[[TWITCH]]"><img src="../assets/twitch.png" class="gdButton socialButton"></a>
@@ -282,17 +285,21 @@ function appendComments() {
 			$('#statusDiv').append(`
 				<div class="commentBG">
 					<div class="comment">
-						<img class="inline statusIcon" src="${$('#mainIcon').find('img').attr('src') || ""}" height=21% style="display: ${compactMode ? "inline-block" : "none"}; margin-right: 0.8%">
-						<h2 class="inline">[[USERNAME]]</h2>
+						<div class="comment-header">
+							<div class="comment-profile">
+								<img class="inline statusIcon" src="${$('#mainIcon').find('img').attr('src') || ""}" style="display: ${compactMode ? "inline-block" : "none"};">
+								<h2 class="inline">[[USERNAME]]</h2>	
+							</div>
+							<div class="commentLikes">
+								<img id="likeImg" class="likeComment gdButton" commentID="${x.ID}" ${x.likes < 0 ? "style='transform: translateY(25%)'" : ""} src="../assets/${x.likes < 0 ? "dis" : ""}like.png">
+								<h3 class="">${x.likes}</h3>
+							</div>
+						</div>
 						<div class="commentAlign">
 							<p class="pre commentText" style="color: rgb(${"[[USERNAME]]" == "RobTop" ? "50, 255, 255" : "[[MODERATOR]]" == "2" ? "75, 255, 75" : x.browserColor ? "255, 180, 255" : "255, 255, 255"})">${clean(x.content)}</p>
 						</div>
 					</div>
 					<p class="commentDate">${x.date}</p>
-					<div class="commentLikes">
-						<img id="likeImg" class="likeComment gdButton inline" commentID="${x.ID}" ${x.likes < 0 ? "style='transform: translateY(25%)'" : ""} src="../assets/${x.likes < 0 ? "dis" : ""}like.png" height=20% style="margin-right: 0.4%">
-						<h3 class="inline">${x.likes}</h3><br>
-					</div>
 				</div>`)
 		})
 

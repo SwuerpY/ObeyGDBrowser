@@ -467,24 +467,30 @@ function Append(firstLoad, noCache) {
 		x.authorName = clean(x.authorName);
 
 		
-		$('#searchBox').append(`<div class="searchresult" style="height:25%;" title="${x.name}">
-			<h1 title="${x.name} by ${!x.authorName || x.authorName == "-" ? "some nerd" : x.authorName}" style="width: fit-content; padding-right: 1%; font-size: 5.5vh;">${(x.name.length > 20 ? x.name.substring(0,20) + '...' : x.name) || " "}</h1>
-			<h2 class="pre smaller inline gdButton help" title="AuthorID: ${x.authorID}" style="margin-bottom: 2%; font-size: 3.9vh;"><span onclick="searchArtist('${btoa(encodeURIComponent(x.authorName))}','1')">by ${x.authorName}</span></h2>
-			<h3 class="lessSpaced" style="width: fit-content;margin-bottom: 0.1%; font-size: 3vh;" title="${x.levelsCount} level(s) using this song">
-				<img class="help valign rightSpace" title="${x.levelsCount} level(s) using this song" src="../assets/song/views.png" height="10%">${x.levelsCount} level(s)
-				<br><img class="help valign rightSpace" title="Length" src="../assets/song/download.png" height="16%">Size: ${x.size} MB
-			</h3>
-		
-			<div class="center" style="position:absolute; top: ${9 + (y * 26.5)}%; left: 4.4%; transform:scale(0.82); height: 10%; width: 12.5%;">
-
-
+		$('#searchBox').append(`
+		<div class="searchresult" title="${x.name}">
+			<div class="rating-menu-list center" style="top: ${9 + (y * 26.5)}%;">
 				<div class="difficultyBox">
-					<img class="dAlbum" id="dFace${x.id}" src="../assets/song/disc.png" onerror="this.onerror=null; this.src='../assets/song/disc.png'; this.setAttribute('custom','0')" style="height:125%">
+					<img class="dAlbum" id="dFace${x.id}" src="../assets/song/disc.png" onerror="this.onerror=null; this.src='../assets/song/disc.png'; this.setAttribute('custom','0')">
 				</div>
 			</div>
 
-			<div class="center" style="position:absolute; right: 7%; transform:translateY(-13vh); height: 10%">
-				<a title="View level" onclick="showSong('${btoa(encodeURIComponent(x.name))}','${btoa(x.downloadLink)}','${btoa(x.id)}','${btoa(encodeURIComponent(x.songAuthorT))}','${btoa(encodeURIComponent(x.authorName))}','${btoa(x.levelsCount)}')" ><img style="margin-bottom: 4.5%" class="valign gdButton" src="../assets/view.png" height="105%"></a>
+			<div class="main-menu-list">
+				<h1 class="title-menu-list pre" title="${x.name} by ${!x.authorName || x.authorName == "-" ? "some nerd" : x.authorName}" style="width: fit-content; padding-right: 1%;">${(x.name.length > 20 ? x.name.substring(0,20) + '...' : x.name) || " "}</h1>
+				<h2 class="author-menu-list pre smaller inline gdButton help" title="AuthorID: ${x.authorID}"><span onclick="searchArtist('${btoa(encodeURIComponent(x.authorName))}','1')">By ${x.authorName}</span></h2>
+				<h3 class="details-menu-list lessSpaced" style="width: fit-content;" title="${x.levelsCount} level(s) using this song">
+					<img class="help valign rightSpace" title="${x.levelsCount} level(s) using this song" src="../assets/song/views.png">
+					<span>${x.levelsCount} level(s)</span>
+				</h3>
+				<h3 class="details-menu-list lessSpaced" style="width: fit-content;" title="${x.levelsCount} level(s) using this song">
+					<img class="help valign rightSpace" title="Length" src="../assets/song/download.png">
+					<span>Size: ${x.size} MB</span>
+				</h3>
+			
+
+				<div class="center" style="position:absolute; right: 7%; transform:translateY(-13vh); height: 10%">
+					<a title="View level" onclick="showSong('${btoa(encodeURIComponent(x.name))}','${btoa(x.downloadLink)}','${btoa(x.id)}','${btoa(encodeURIComponent(x.songAuthorT))}','${btoa(encodeURIComponent(x.authorName))}','${btoa(x.levelsCount)}')" ><img style="margin-bottom: 4.5%" class="valign gdButton" src="../assets/view.png" height="105%"></a>
+				</div>
 			</div>
 
 		</div>`)

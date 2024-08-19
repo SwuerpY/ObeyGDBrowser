@@ -117,7 +117,7 @@
 		<div class="diffDiv gdButton" diff=-3><img src="../assets/difficulties/auto.png"><h3 class="diff-text">Auto</h3></div>
 	</div>
 
-	<div id="demons" class="transparentBox" style="display: none;">
+	<div id="demons" class="demons-box transparentBox" style="display: none;">
 		<div class="diffDiv gdButton demonDiff" diff=1 style="margin-left: 3.5%"><img src="../assets/difficulties/demon-easy.png"><h3 class="diff-text center">Easy</h3></div>
 		<div class="diffDiv gdButton demonDiff" diff=2><img src="../assets/difficulties/demon-medium.png"><h3 class="diff-text center smallTextWoo">Medium</h3></div>
 		<div class="diffDiv gdButton demonDiff" diff=3><img src="../assets/difficulties/demon-hard.png"><h3 class="diff-text center">Hard</h3></div>
